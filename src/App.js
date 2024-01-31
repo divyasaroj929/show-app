@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<ShowList />} />{" "}
+        <Route exact path="show-app/" element={<ShowList />} />{" "}
         <Route path="/show/:id" element={<ShowDetail />} />
       </Routes>
     </div>

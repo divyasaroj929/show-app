@@ -15,6 +15,16 @@ const ShowDetail = () => {
   const bookTicket = () => {
     alert(`Booking ticket for ${show.name}`);
   };
+  const saveUserDetails = () => {
+    const userDetails = {
+      showId: id,
+      showName: show.name,
+      // Add more user details if needed
+    };
+    localStorage.setItem("userDetails", JSON.stringify(userDetails));
+    // Or sessionStorage.setItem("userDetails", JSON.stringify(userDetails));
+    alert("User details saved!");
+  };
 
   return (
     <div className="details-page groups-card">
@@ -24,7 +34,10 @@ const ShowDetail = () => {
           <div className="card-details">
             <h2>{show.name}</h2>
             <p dangerouslySetInnerHTML={{ __html: show.summary }}></p>
-            <button onClick={bookTicket}>Book Ticket</button>
+            <div className="details-button">
+              <button onClick={bookTicket}>Book Ticket</button>
+              <button onClick={saveUserDetails}>Save User Details</button>
+            </div>
           </div>
         )}
       </div>

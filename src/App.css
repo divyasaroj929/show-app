@@ -71,3 +71,10 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+.details-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
