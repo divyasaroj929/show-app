@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.groups-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+.cards {
+  padding: 10px;
+  margin: 2rem;
+  margin-bottom: 5px;
+  height: 200px;
+  width: 10rem;
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid gray;
+  box-shadow: 0 0.5rem 1rem -0.25rem gray;
+}
+.cards:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0), white);
+  box-shadow: 0 0.5rem 2rem -0.25rem gray;
+}
+.card-details {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -30px;
+  left: 0;
+  box-shadow: 0 0.5rem 1rem -0.25rem gray;
+  z-index: 5;
+  background-color: rgb(236, 232, 237);
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
